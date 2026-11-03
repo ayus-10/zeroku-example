@@ -25,5 +25,7 @@ func main() {
 
 	log.Printf("listening on :%s", port)
 
+	os.Exit(1)
+
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
